@@ -15,10 +15,10 @@ import org.springframework.context.annotation.ComponentScan;
 @SpringBootApplication
 public class FirstApplication {
 
-	public static void main(String[] args) {
+    public static void main(String[] args) {
 
-		SpringApplication.run(FirstApplication.class, args);
-	}
+        SpringApplication.run(FirstApplication.class, args);
+    }
 
 }
 

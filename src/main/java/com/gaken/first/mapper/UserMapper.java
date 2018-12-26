@@ -22,9 +22,10 @@ public interface UserMapper extends BaseMapper<User> {
 
     /**
      * xml 方式通过id获取用户信息
+     *
+     * @param id
      * @author: dengguikun
      * @date: 2018-12-26
-     * @param id
      * @return: com.gaken.first.entity.User
      */
     User selectByXmlId(@Param("id") Long id);

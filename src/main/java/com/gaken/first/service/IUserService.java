@@ -15,19 +15,31 @@ public interface IUserService extends IService<User> {
 
     /**
      * 通过id获取用户信息
+     *
+     * @param id
      * @author: dengguikun
      * @date: 2018-12-26
-     * @param id
      * @return: com.gaken.first.entity.User
      */
     List<User> selectList();
 
     /**
      * 通过id获取用户信息xml方式
+     *
+     * @param id
      * @author: dengguikun
      * @date: 2018-12-26
-     * @param id
      * @return: com.gaken.first.entity.User
      */
     User selectByXmlId(Long id);
+
+    /**
+     * 添加用户信息(测试事务)
+     *
+     * @param user
+     * @author: dengguikun
+     * @date: 2018-12-26
+     * @return: int
+     */
+    int save(User user);
 }
